@@ -1,0 +1,13 @@
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3rem;
+}
