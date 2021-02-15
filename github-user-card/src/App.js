@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import UserCard from './components/UserCard';
 import './App.css';
-
+import FollowerCard from './components/followerCard';
 import Search from "./components/Search";
 
 class App extends React.Component {
@@ -46,9 +46,13 @@ class App extends React.Component {
                 <h1>Github Card Search</h1>        
                 <Search searchUser={this.searchUser} />
                 <UserCard userCard={this.state.currentUser}/>
-                {this.state.followers.map(follower => (
-                    <UserCard userCard={follower} key={follower.id}/>
-                ))}
+                <h2>Followers </h2>
+                <div className="followers">
+                    {this.state.followers.map(follower => (
+                    <FollowerCard userCard={follower} key={follower.id}/>
+                    ))}  
+                </div>
+               
             </div>
         )
     }

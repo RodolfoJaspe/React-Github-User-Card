@@ -5,16 +5,15 @@ class UserCard extends React.Component {
         const {userCard} = this.props;
         return (
             <div className="card">
-                <h2>User Card</h2>
                 <img  src={userCard.avatar_url} alt="profile image"/>
                 <div className="card-info">
                     <h3 className="name">{userCard.name}</h3>
-                    <p className="username">{userCard.login}</p>
-                    <p>Location: {userCard.location}</p>
-                    <p>Profile: {userCard.html_url}</p>
-                    <p>Followers: {userCard.followers}</p>
-                    <p>Following: {userCard.following}</p>
-                    <p>Bio: {userCard.bio}</p>
+                    <p className="username"><b>Username:</b> {userCard.login}</p>
+                    <p><b>Location:</b> {userCard.location}</p>
+                    <p><b>Profile:</b> {userCard.html_url}</p>
+                    <p><b>Followers: </b>{userCard.followers}</p>
+                    <p><b>Following: </b>{userCard.following}</p>
+                    <p><b>Bio: </b>{userCard.bio}</p>
                 </div>
           </div>
         )
