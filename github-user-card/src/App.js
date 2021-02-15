@@ -42,7 +42,8 @@ class App extends React.Component {
     render() {
         console.log('render invoked');
         return (
-            <div>        
+            <div>
+                <h1>Github Card Search</h1>        
                 <Search searchUser={this.searchUser} />
                 <UserCard userCard={this.state.currentUser}/>
                 {this.state.followers.map(follower => (

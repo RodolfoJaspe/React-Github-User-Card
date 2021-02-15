@@ -26,7 +26,7 @@ class Search extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" onChange={this.handleChange} value={this.state.login} placeholder="enter a github username"/>
+                    <input type="text" onChange={this.handleChange} value={this.state.login} placeholder="enter github username"/>
                     <button>Search User</button>
                 </form>
             </div>

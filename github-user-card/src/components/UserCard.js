@@ -5,7 +5,7 @@ class UserCard extends React.Component {
         const {userCard} = this.props;
         return (
             <div className="card">
-                <h1>User Card</h1>
+                <h2>User Card</h2>
                 <img  src={userCard.avatar_url} alt="profile image"/>
                 <div className="card-info">
                     <h3 className="name">{userCard.name}</h3>
